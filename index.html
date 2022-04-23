@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Web Board</title>
+</head>
+<body>
+    <div class="opt-cont">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="tools-cont scaletools">
+
+        <i class="fa-solid fa-pencil" id="pencil"></i>
+        <i class="fa-solid fa-eraser" id="eraser"></i>
+        <i class="fa-solid fa-download" id="download"></i>
+        <i class="fa-solid fa-upload" id="upload"></i>
+        <i class="fa-solid fa-note-sticky" id="stickynotes"></i>
+        <i class="fa-solid fa-rotate-right" id="redo"></i>
+        <i class="fa-solid fa-rotate-left" id="undo"></i>
+    </div>
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input type="range" min="2" max="10" value="3" class="pencil-width">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="blue pencil-color"></div>
+        </div>
+    </div>
+
+    <div class="eraser-tool-cont">
+        <input type="range" min="2" max="10" value="3" class="eraser-width">
+    </div>
+    <canvas></canvas>
+    <script src="./script.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
